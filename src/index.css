@@ -1,0 +1,95 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.hero-section {
+  background: url('/asset/background.png') no-repeat center center;
+  background-size: contain;
+  height: 100vh;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.enlarged-text {
+  font-size: 2.0rem !important;
+  line-height: 1.6;
+}
+
+.reference-list li {
+  font-size: 1.2rem;
+}
+
+.reference-label {
+  font-size: 1.2rem;
+}
+
+.contents-intro-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.about-body-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.3rem;
+  font-size: 1.25rem; /* Equivalent to Bootstrap's btn-lg */
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.icon-button-img {
+  width: 1.5em; /* Adjust size relative to font-size */
+  height: 1.5em;
+  margin-right: 0.5rem;
+}
+
+.secondary-button {
+  background-color: #6c757d; /* Bootstrap secondary color */
+  color: white;
+  border: 1px solid #6c757d;
+}
+
+.secondary-button:hover {
+  background-color: #5c636a;
+  border-color: #5c636a;
+}
+
+.primary-button {
+  background-color: #0d6efd; /* Bootstrap primary color */
+  color: white;
+  border: 1px solid #0d6efd;
+}
+
+.primary-button:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
